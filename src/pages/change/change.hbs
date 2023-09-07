@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>{{title}}</title>
+    </head>    
+    <body>
+        {{> svg}}
+        <main class="wrapper">
+           
+            <div class="profile">
+                 <h1>{{title}}</h1>
+                {{#> FormProfile}}
+                    <div class="profile__avatar">
+                     
+                        <div class="profile__avatar-icon">
+                            <input type="file">
+                            <img src="/img/avatar.png" alt="">
+
+                            <span>Изменить аватар</span>
+                        </div>
+                    </div>
+
+                    {{> InputProfile label="Почта" type="mail" name="email" value="pochta@yandex.ru" }}
+                    {{> InputProfile label="Логин" type="text"  name="login" value="ivanivanov"  }}
+                    {{> InputProfile label="Имя" type="text"  name="first_name" value="Иван"  }}
+                    {{> InputProfile label="Фамилия" type="text"  name="second_name" value="Иванов"  }}
+                    {{> InputProfile label="Имя в чате" type="text"  name="display_name" value="Иван"  }}
+                    {{> InputProfile label="Телефон"  type="text"  name="phone" value="+7 (909) 967 30 30" }}
+                    <div class="profile__link">
+                        {{> Button label="Сохранить"  color="red" }}
+                    </div>
+                 
+                    {{test}}
+                {{/FormProfile}}
+
+            </div>
+        </main>
+    </body>
+</html>

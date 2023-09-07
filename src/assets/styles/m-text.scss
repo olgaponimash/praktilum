@@ -1,0 +1,40 @@
+.m-text {
+    max-width: 402px;
+    background: #F8F8F8;
+    padding: 11px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E1E1E;
+    float: left;
+    clear: both;
+
+    &--me {
+        margin-left: 430px;
+        float: right;
+        background-color: rgba($red, 0.1);
+    }
+
+    &__time {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 11px;
+        margin-top: 5px;
+        text-align: right;
+        color: #999999;
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

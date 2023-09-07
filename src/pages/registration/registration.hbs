@@ -1,0 +1,39 @@
+<div class="container">
+    
+</div>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+    
+    <head>
+        <title>{{title}}</title>
+    </head> 
+
+    <body>
+        {{> svg}}
+        <main class="wrapper">
+            <div class="form__section">
+
+                <h1 class="form__title">
+                    {{title}}
+                </h1>
+
+                {{#> FormReq}}
+                    {{> Input label="Имя" required="true" type="text" name="name" }}
+                    {{> Input label="Фамилия" required="true" type="text" name="surname" }}
+                    {{> Input label="Логин" required="true" type="text" name="login" }}
+                    {{> Input label="Почта"  type="mail" name="email" }}
+                    {{> Input label="Пароль" password="true" required="true" type="password" name="password"}}
+                     {{> Input label="Пароль (ещё раз)" password="true" required="true" type="password" name="password"}}
+                    <div class="form__btn">
+                        {{> Button label="Зарегистрироваться" color="red" type="link" page="chat"}}
+                    </div>
+                     <div class="form__link">
+                        <a page="auth" href="/auth">Авторизация</a>
+                    </div>
+                {{/FormReq}}
+            </div>
+        </main>
+    </body>
+</html>

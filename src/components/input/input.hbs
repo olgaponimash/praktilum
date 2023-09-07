@@ -1,0 +1,16 @@
+
+
+<div class="form__field js-form-field">
+    <div class="form__label js-form-label">
+        {{label}} {{#if required}}*{{/if}}
+    </div>
+    <div class="form__field-wrap">
+    <input class="form__input js-form-input" name={{name}} type={{type}} id="">
+    {{#if password }}
+        <div class="form__control js-password">
+            <svg width="16" height="14" viewBox="0 0 16 14" class="svg-icon"><use xlink:href="#svg-eyes"></use></svg>
+            <svg width="16" height="14" viewBox="0 0 16 14" class="svg-icon"><use xlink:href="#svg-neyes"></use></svg>
+        </div>
+    {{/if}}
+    </div>
+</div>
