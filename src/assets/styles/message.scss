@@ -1,0 +1,145 @@
+.message {
+
+
+    &__time {
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 13px; 
+        text-align: right;
+        color: #999999;
+    }
+
+    &__wrap {
+        padding: 10px;
+        position: absolute;
+        cursor: pointer;
+        left: 85px;
+        background-color: #fff;
+        width: 220px;
+        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+        z-index: 5;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+
+        &.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        &-item {
+            display: inline-flex;
+            margin-bottom: 5px;
+            font-size: 14px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Inter';
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 12px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #810d10;
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        align-items: stretch;
+        cursor: pointer;
+        position: relative;
+        padding: 12px 10px;
+        margin: 2px 0 4px;
+        width: 100%;
+        min-height: 67px;
+        max-height: 85px;
+        position: relative;
+        transition: background-color 0.3s ease;
+       
+        &::before {
+            content:" ";
+            position: absolute;
+            top: -2px;
+            background: #EAEAEA;
+            height: 1px;
+            left: 10px;
+            right: 10px;
+        }
+
+        &:hover {
+            background-color: rgba(237, 230, 230, 0.5);
+        }
+
+        &.is-active {
+            background-color: rgba(237, 230, 230, 0.5);
+        }
+    }
+
+    &__body {
+        padding-top: 3px;
+        width: calc(100% - 30px - 57px);
+        padding-right: 15px;
+    }
+
+    &__text {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #999999;
+
+        span {
+            margin-right: 5px;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    &__info {
+        width: 30px;
+        flex: none;
+    }
+
+    &__avatar {
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex: none;
+        margin-right: 10px;
+        background-color: rgba($red, 0.5);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 13px;
+        margin-bottom: 4px;
+    }
+}

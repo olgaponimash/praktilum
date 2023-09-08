@@ -1,0 +1,150 @@
+{{> svg}}
+<main>
+    <div class="chat">
+        <div class="chat__messages">
+            <div class="chat__profile">
+                <a page="profile" href="profile">
+                    <div class="chat__profile-avatar">
+                        <img alt="avatar" src="/img/avatar.png" alt="">
+                    </div>
+                    <span>  
+                        Name Name
+                    </span>
+                </a>
+            </div>
+
+            <div class="chat__search">
+                <div class="search">
+                    <div class="search__icon">
+                        <svg width="19" height="19" viewBox="0 0 19 19" class="svg-icon">
+                            <use xlink:href="#svg-search-btn"></use>
+                        </svg>
+                    </div>
+                    <input placeholder="Поиск" type="text">
+                </div>
+            </div>
+
+            <div class="chat__list">
+                <div class="chat__list-body">
+                    <div class="message" id="clickable">
+                            {{> ListChat }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chat__body">
+
+            <div class="chat__top">
+                <div class="chat__name">
+                    <div class="chat__avatar">
+                        <img alt="avatar" src="/img/avatar.png" alt="">
+                    </div>
+                    <span>Вадим</span>
+                </div>
+
+                <div class="chat__control">
+                    <div class="chat__control-btn">
+                        <svg width="10" height="6" viewBox="0 0 10 6" class="svg-icon">
+                            <use xlink:href="#svg-arrow-menu"></use>
+                        </svg>  
+                    </div>
+                    <div class="chat__control-wrap">
+                        <div class="chat__control-item">
+                            <div class="chat__control-icon">
+                                <svg width="12" height="12" viewBox="0 0 12 12" class="svg-icon">
+                                    <use xlink:href="#svg-plus"></use>
+                                </svg>  
+                            </div>
+                            Добавить контакт
+                        </div>
+                        <div class="chat__control-item">
+                            <div class="chat__control-icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" class="svg-icon">
+                                    <use xlink:href="#svg-delete"></use>
+                                </svg>
+                            </div>
+                            Удалить чат
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="chat__main">
+                <div class="chat__section">
+                    <div class="chat__time">
+                        19 июня
+                    </div>
+                    <div class="chat__block">
+                        <div class="m-text">
+                            <div class="m-text__body">
+                                Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+
+                                Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+                            </div>
+                            <div class="m-text__time">
+                                11:56
+                            </div>
+                        </div>
+                        <div class="m-text m-text--me">
+                            <div class="m-text__body">
+                            Круто!
+                            </div>
+                            <div class="m-text__time">
+                                <svg  width="11" height="5" viewBox="0 0 11 5" class="svg-icon">
+                                    <use xlink:href="#svg-ok-message"></use>
+                                </svg>
+                                11:56
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="chat__section">
+                    <div class="chat__time">
+                        20 июня
+                    </div>
+                    <div class="chat__block">
+                        <div class="m-text">
+                            <div class="m-text__body">
+                                Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+
+                                Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+                            </div>
+                            <div class="m-text__time">
+                                11:56
+                            </div>
+                        </div>
+                        <div class="m-text m-text--me">
+                            <div class="m-text__body">
+                            Круто!
+                            </div>
+                            <div class="m-text__time">
+                                <svg  width="11" height="5" viewBox="0 0 11 5" class="svg-icon">
+                                    <use xlink:href="#svg-ok-message"></use>
+                                </svg>
+                                11:56
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="chat__form">
+                <form action="">
+                    <div class="chat__file">
+                        <svg width="30" height="30" viewBox="0 0 30 30" class="svg-icon"><use xlink:href="#svg-chat"></use></svg>
+                        <input type="file">
+                    </div>
+                    <input placeholder="Сообщение" name="message" type="text">
+                    <div class="chat__form-btn">
+                        <svg width="13" height="12" viewBox="0 0 13 12" class="svg-icon">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

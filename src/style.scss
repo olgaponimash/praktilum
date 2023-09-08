@@ -1,0 +1,31 @@
+$red: #810D10;
+@import "src/assets/styles/font.scss";
+@import "src/assets/styles/btn.scss";
+@import "src/assets/styles/chat.scss";
+@import "src/assets/styles/form.scss";
+@import "src/assets/styles/m-text.scss";
+@import "src/assets/styles/heading.scss";
+@import "src/assets/styles/message.scss";
+@import "src/assets/styles/search.scss";
+@import "src/assets/styles/notfound.scss";
+@import "src/assets/styles/profile.scss";
+
+body {
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}

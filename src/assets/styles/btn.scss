@@ -1,0 +1,29 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 16px 28px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    font-family: 'Bitter', serif;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s ease;
+
+    &--red {
+        color: #fff;
+        background-color: $red;
+
+        &:hover {
+            color:  $red;
+            border-color:  $red;
+            background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+
+
+<div class="message__item  {{#if active}}is-active{{/if}}">
+    <div class="message__avatar">
+         <img alt="avatar" src="{{avatar}}"/>
+    </div>
+    <div class="message__body">
+        <div class="message__name">
+           {{ name }}
+        </div>
+        <div class="message__text">
+            {{text}}
+        </div>
+    </div>
+    <div class="message__info">
+        <div class="message__time">
+            {{ time }}
+        </div>
+        {{#if count}} 
+        <div class="message__count">
+            {{ count  }}
+        </div>
+        {{/if}}
+    </div>
+</div>

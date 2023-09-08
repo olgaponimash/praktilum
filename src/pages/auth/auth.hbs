@@ -1,0 +1,20 @@
+{{> svg}}
+<main class="wrapper">
+    <div class="form__section">
+
+        <h1 class="form__title">
+            Вход
+        </h1>
+
+        {{#> FormAuth}}
+            {{> Input label="Логин (Email)" required="true" type="text" name="login" }}
+            {{> Input label="Пароль" password="true" required="true" type="password" name="password"}}
+            <div class="form__btn">
+                {{> Button label="Авторизоваться" color="red" type="link" page="chat"}}
+            </div>
+                <div class="form__link">
+                <a page="req" href="/req">Регистрация</a>
+            </div>
+        {{/FormAuth}}
+    </div>
+</main>
