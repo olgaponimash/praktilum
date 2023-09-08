@@ -1,9 +1,5 @@
-
-
 <div class="form__field js-form-field">
-    <div class="form__label js-form-label">
-        {{label}} {{#if required}}*{{/if}}
-    </div>
+    <label class="form__label js-form-label" for={{name}}>{{label}} {{#if required}}*{{/if}}</label>
     <div class="form__field-wrap">
     <input class="form__input js-form-input" name={{name}} type={{type}} id="">
     {{#if password }}

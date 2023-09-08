@@ -1,53 +1,43 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <title>Профиль</title>
-
-    </head>    
-    <body>
-        {{> svg}}
-        <main class="wrapper">
-            <div class="profile">
-                <div class="profile__avatar">
-                    <div class="profile__avatar-icon">
-                        <img src="/img/avatar.png" alt="">
-                    </div>
-                    <span class="profile__name">Name Name</span>
-                </div>
-
-                <div class="profile__info">
-                    <div class="profile__info-item">
-                        <span>Почта</span>
-                        <span>pochta@yandex.ru</span>
-                    </div>
-                     <div class="profile__info-item">
-                        <span>Логин</span>
-                        <span>ivanivanov</span>
-                    </div>
-                     <div class="profile__info-item">
-                        <span>Имя</span>
-                        <span>Иван</span>
-                    </div>
-                     <div class="profile__info-item">
-                        <span>Фамилия</span>
-                        <span>Иванов</span>
-                    </div>
-                     <div class="profile__info-item">
-                        <span>Имя в чате</span>
-                        <span>Иван</span>
-                    </div>
-                    <div class="profile__info-item">
-                        <span>Телефон</span>
-                        <span>+7 (909) 967 30 30</span>
-                    </div>
-                </div>
-                <div class="profile__link">
-                    <a class="profile__link-item" href="">Изменить данные</a>
-                    <a class="profile__link-item" page="changepassword"  href="/change">Изменить пароль</a>
-                    <a class="btn btn--red"  href="">Выйти</a>
-                </div>
+{{> svg}}
+<main class="wrapper">
+    <div class="profile">
+        <div class="profile__avatar">
+            <div class="profile__avatar-icon">
+                <img alt="avatar" src="/img/avatar.png" alt="">
             </div>
-        </main>
-    </body>
+            <span class="profile__name">Name Name</span>
+        </div>
 
-</html>
+        <div class="profile__info">
+            <div class="profile__info-item">
+                <span>Почта</span>
+                <span>pochta@yandex.ru</span>
+            </div>
+                <div class="profile__info-item">
+                <span>Логин</span>
+                <span>ivanivanov</span>
+            </div>
+                <div class="profile__info-item">
+                <span>Имя</span>
+                <span>Иван</span>
+            </div>
+                <div class="profile__info-item">
+                <span>Фамилия</span>
+                <span>Иванов</span>
+            </div>
+                <div class="profile__info-item">
+                <span>Имя в чате</span>
+                <span>Иван</span>
+            </div>
+            <div class="profile__info-item">
+                <span>Телефон</span>
+                <span>+7 (909) 967 30 30</span>
+            </div>
+        </div>
+        <div class="profile__link">
+            <a class="profile__link-item" href="">Изменить данные</a>
+            <a class="profile__link-item" page="changepassword"  href="/change">Изменить пароль</a>
+            <a class="btn btn--red"  href="">Выйти</a>
+        </div>
+    </div>
+</main>

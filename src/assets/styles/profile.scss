@@ -49,6 +49,10 @@
                 text-align: right;
             }
 
+            label {
+                font-weight: bold;
+            }
+
             span {
                 &:first-child {
                     font-weight: bold;
